@@ -5,7 +5,7 @@ defmodule PipelineCi.MixProject do
     [
       app: :pipeline_ci,
       version: "0.1.0",
-      elixir: "~> 1.14",
+      elixir: "~> 1.18",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
@@ -66,7 +66,7 @@ defmodule PipelineCi.MixProject do
       {:dns_cluster, "~> 0.1.1"},
       {:bandit, "~> 1.5"},
       {:credo, "~> 1.7.10", only: [:dev, :test], runtime: false},
-      {:excoveralls, "~> 0.18.0", only: [:test, :dev]}
+      {:excoveralls, "~> 0.18.5", only: [:test, :dev]}
     ]
   end
 
